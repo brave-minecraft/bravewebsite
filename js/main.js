@@ -52,7 +52,7 @@ $(document).ready(()=>{
     if (result.online) {
       $(".sip").html(result.players.now);
     } else {
-      $(".playercount").html("Server online pe data de 07.08.2020!");
+      $(".playercount").html("Server online!");
     }
   });
 
@@ -61,7 +61,7 @@ $(document).ready(()=>{
       if (result.online) {
         $(".sip").html(result.players.now);
       } else {
-        $(".playercount").html("Server online pe data de 07.08.2020!");
+        $(".playercount").html("Server online!");
       }
     });
   }, 3000);
