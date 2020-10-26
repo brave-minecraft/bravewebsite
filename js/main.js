@@ -52,7 +52,7 @@ $(document).ready(()=>{
     if (result.online) {
       $(".sip").html(result.players.now);
     } else {
-      $(".playercount").html("");
+      $(".playercount");
     }
   });
 
@@ -61,7 +61,7 @@ $(document).ready(()=>{
       if (result.online) {
         $(".sip").html(result.players.now);
       } else {
-        $(".playercount").html("");
+        $(".playercount");
       }
     });
   }, 3000);
