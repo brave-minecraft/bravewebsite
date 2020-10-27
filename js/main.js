@@ -35,7 +35,7 @@ $(document).on("click",".ip",()=>{
 	copy.textContent = t;
 	copy.select();
 	document.execCommand("copy");
-	$(".ip").html("<span class='extrapad'>IP copied!</span>");
+	$(".ip").html("<span class='extrapad'>IP COPIED!</span>");
 	setTimeout(function(){
 		$(".ip").html(t);
 		var copy = document.getElementById("ta");
@@ -51,8 +51,6 @@ $(document).ready(()=>{
   $.get(`https://mcapi.us/server/status?ip=${ip}&port=${port}`, (result)=>{
     if (result.online) {
       $(".sip").html(result.players.now);
-    } else {
-      $(".playercount");
     }
   });
 
@@ -60,8 +58,6 @@ $(document).ready(()=>{
     $.get(`https://mcapi.us/server/status?ip=${ip}&port=${port}`, (result)=>{
       if (result.online) {
         $(".sip").html(result.players.now);
-      } else {
-        $(".playercount");
       }
     });
   }, 3000);
